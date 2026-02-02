@@ -1,31 +1,72 @@
-.env
-
-# OS generated files #
-######################
+# OS generated files
 .DS_Store
-__MACOSX
-# Jupiter Notebook #
-.pytest_cache
-__pycache__
-*checkpoint.ipynb
-*.ipynb_checkpoints
+__MACOSX/
 
-# inteliJ #
-.idea
-*.gz
+# Python / cache
+.pytest_cache/
+__pycache__/
+*.pyc
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# IntelliJ / JetBrains
+.idea/
+
+# IDE (VS Code)
+.vscode/
+
+# Packaging / build artifacts
+*.egg-info/
 *PKG-INFO
-*.egg-info
+*.gz
+*.zip
+
+# Data / tracking
+mlruns/
+*.sqlite
+*.sqlite3
+*.duckdb
+
+# If you REALLY want to ignore all CSVs, keep this.
+# Otherwise, remove it and ignore only data/ folders instead.
 *.csv
+
+# Course-specific text outputs
 05-ML/**/*.txt
 06-Deep-Learning/**/*.txt
-*.zip
-mlruns
-*.sqlite
-# IDE #
-*.vscode
 
 # Specific Challenges
 06-Deep-Learning/03-Convolutional-Neural-Networks/04-Transfer-Learning/flowers/
 
 # Challengify - test challengification files
 *_challengify*
+
+# Secrets (env files)
+.env
+*.env
+.env.*
+
+# Vector store / Chroma
+chroma_store/
+chroma_db/
+.chromadb/
+
+# pyenv
+.python-version
+
+# virtual env
+.venv/
+
+# local data files
+data/
+# pyenv
+.python-version
+
+# virtual env
+.venv/
+
+# local data files (PDFs etc.)
+data/
